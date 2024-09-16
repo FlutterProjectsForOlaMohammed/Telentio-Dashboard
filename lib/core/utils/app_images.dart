@@ -1,32 +1,66 @@
+// ignore_for_file: prefer_single_quotes
 class AppImages {
   AppImages._();
 
+  /// Assets for imagesCommunity
+  /// assets/images/community.svg
   static const String imagesCommunity = "assets/images/community.svg";
 
+  /// Assets for imagesDashboard
+  /// assets/images/dashboard.svg
   static const String imagesDashboard = "assets/images/dashboard.svg";
 
+  /// Assets for imagesDocument
+  /// assets/images/document.svg
   static const String imagesDocument = "assets/images/document.svg";
 
+  /// Assets for imagesHelpIcon
+  /// assets/images/helpIcon.svg
   static const String imagesHelpIcon = "assets/images/helpIcon.svg";
 
+  /// Assets for imagesJob
+  /// assets/images/job.svg
   static const String imagesJob = "assets/images/job.svg";
 
+  /// Assets for imagesLogout
+  /// assets/images/logout.svg
   static const String imagesLogout = "assets/images/logout.svg";
 
+  /// Assets for imagesMaleOrFemale
+  /// assets/images/maleOrFemale.svg
   static const String imagesMaleOrFemale = "assets/images/maleOrFemale.svg";
 
+  /// Assets for imagesMessage
+  /// assets/images/message.svg
   static const String imagesMessage = "assets/images/message.svg";
 
+  /// Assets for imagesNotificationIcon
+  /// assets/images/notificationIcon.svg
   static const String imagesNotificationIcon =
       "assets/images/notificationIcon.svg";
 
+  /// Assets for imagesSchedule
+  /// assets/images/schedule.svg
   static const String imagesSchedule = "assets/images/schedule.svg";
 
+  /// Assets for imagesSearchIcon
+  /// assets/images/searchIcon.svg
   static const String imagesSearchIcon = "assets/images/searchIcon.svg";
 
+  /// Assets for imagesSettingsIcon
+  /// assets/images/settingsIcon.svg
   static const String imagesSettingsIcon = "assets/images/settingsIcon.svg";
 
+  /// Assets for imagesStatistics
+  /// assets/images/statistics.svg
   static const String imagesStatistics = "assets/images/statistics.svg";
 
+  /// Assets for imagesUpgrade illustration
+  /// assets/images/upgrade illustration.png
+  static const String imagesUpgradeillustration =
+      "assets/images/upgradeillustration.png";
+
+  /// Assets for imagesUpgradePicture
+  /// assets/images/upgradePicture.svg
   static const String imagesUpgradePicture = "assets/images/upgradePicture.svg";
 }

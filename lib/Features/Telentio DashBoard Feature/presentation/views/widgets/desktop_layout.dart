@@ -16,7 +16,7 @@ class DesktopLayout extends StatelessWidget {
           Expanded(
             flex: 9,
             child: Container(
-              color: const Color.fromARGB(255, 228, 226, 226),
+              color: const Color(0xffE5EAFF),
             ),
           ),
           Expanded(
