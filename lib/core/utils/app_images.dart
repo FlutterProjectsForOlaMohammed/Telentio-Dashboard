@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_single_quotes
 class AppImages {
   AppImages._();
-
+  
   /// Assets for imagesCommunity
   /// assets/images/community.svg
   static const String imagesCommunity = "assets/images/community.svg";
@@ -36,16 +36,15 @@ class AppImages {
 
   /// Assets for imagesNotificationIcon
   /// assets/images/notificationIcon.svg
-  static const String imagesNotificationIcon =
-      "assets/images/notificationIcon.svg";
+  static const String imagesNotificationIcon = "assets/images/notificationIcon.svg";
 
   /// Assets for imagesSchedule
   /// assets/images/schedule.svg
   static const String imagesSchedule = "assets/images/schedule.svg";
 
-  /// Assets for imagesSearchIcon
-  /// assets/images/searchIcon.svg
-  static const String imagesSearchIcon = "assets/images/searchIcon.svg";
+  /// Assets for imagesSearch
+  /// assets/images/search.svg
+  static const String imagesSearch = "assets/images/search.svg";
 
   /// Assets for imagesSettingsIcon
   /// assets/images/settingsIcon.svg
@@ -55,12 +54,12 @@ class AppImages {
   /// assets/images/statistics.svg
   static const String imagesStatistics = "assets/images/statistics.svg";
 
-  /// Assets for imagesUpgrade illustration
-  /// assets/images/upgrade illustration.png
-  static const String imagesUpgradeillustration =
-      "assets/images/upgradeillustration.png";
-
   /// Assets for imagesUpgradePicture
   /// assets/images/upgradePicture.svg
   static const String imagesUpgradePicture = "assets/images/upgradePicture.svg";
+
+  /// Assets for imagesUpgradeillustration
+  /// assets/images/upgradeillustration.png
+  static const String imagesUpgradeillustration = "assets/images/upgradeillustration.png";
 }
+
