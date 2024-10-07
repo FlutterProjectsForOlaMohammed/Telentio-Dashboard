@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:telentio_dashboard/core/utils/app_styles.dart';
 import 'package:telentio_dashboard/core/utils/color_palette.dart';
 
 class ByTimingDropDownButton extends StatefulWidget {
   const ByTimingDropDownButton({
     super.key,
   });
-
   @override
   State<ByTimingDropDownButton> createState() => _ByTimingDropDownButtonState();
 }
@@ -44,6 +44,17 @@ class _ByTimingDropDownButtonState extends State<ByTimingDropDownButton> {
             Icons.keyboard_arrow_down_sharp,
             color: ColorPalette.black,
           ),
+          selectedItemBuilder: (context) {
+            return List.generate(dropdownMenuItemitems.length, (index) {
+              return Center(
+                child: Text(
+                  selectedItem,
+                  style: AppStyles.styleRegular12(context)
+                      .copyWith(fontWeight: FontWeight.w600),
+                ),
+              );
+            });
+          },
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 2),
           borderRadius: BorderRadius.circular(14),
           value: selectedItem,

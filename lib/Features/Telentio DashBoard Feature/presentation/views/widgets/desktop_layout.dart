@@ -12,15 +12,15 @@ class DesktopLayout extends StatelessWidget {
       body: Row(
         children: [
           Expanded(
-            flex: 2,
+            flex: 3,
             child: CustomDrawer(),
           ),
           Expanded(
-            flex: 9,
+            flex: 12,
             child: DashboardSection(),
           ),
           Expanded(
-            flex: 3,
+            flex: 4,
             child: Text("Ola"),
           ),
         ],

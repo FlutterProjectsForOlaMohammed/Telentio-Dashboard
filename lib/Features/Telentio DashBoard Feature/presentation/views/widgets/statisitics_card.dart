@@ -10,9 +10,11 @@ class StatisiticsCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return AspectRatio(
       aspectRatio: 266 / 126,
-      child: Card(
-        elevation: 0,
-        color: Colors.white,
+      child: Container(
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(10),
+        ),
         child: Padding(
           padding: const EdgeInsets.only(left: 16, bottom: 16),
           child: Column(

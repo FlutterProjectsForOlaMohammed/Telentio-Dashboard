@@ -9,12 +9,14 @@ class StatesOfApplicationsSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 564 / 366,
-      child: Card(
-        color: Colors.white,
-        elevation: 0,
+      aspectRatio: 548 / 366,
+      child: Container(
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(10),
+        ),
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(32, 32, 32, 24),
+          padding: const EdgeInsets.fromLTRB(32, 16, 32, 24),
           child: Column(
             children: [
               const StatesOfApplicationsHeader(),
