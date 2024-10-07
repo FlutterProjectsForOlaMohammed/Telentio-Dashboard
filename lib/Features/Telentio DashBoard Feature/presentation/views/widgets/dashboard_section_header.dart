@@ -7,23 +7,21 @@ class DashboardSectionHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Expanded(
-            flex: 5,
-            child: Text(
-              "Dashboard",
-              style: AppStyles.styleBold24(context),
-            ),
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Expanded(
+          flex: 6,
+          child: Text(
+            "Dashboard",
+            style: AppStyles.styleBold24(context),
           ),
-          const Expanded(
-            flex: 2,
-            child: SearchButton(),
-          ),
-        ],
-      ),
+        ),
+        const Expanded(
+          flex: 3,
+          child: SearchButton(),
+        ),
+      ],
     );
   }
 }

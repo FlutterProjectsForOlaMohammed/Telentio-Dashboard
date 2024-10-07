@@ -2,6 +2,14 @@
 class AppImages {
   AppImages._();
   
+  /// Assets for imagesArrowDecr
+  /// assets/images/arrow_decr.svg
+  static const String imagesArrowDecr = "assets/images/arrow_decr.svg";
+
+  /// Assets for imagesArrowInc
+  /// assets/images/arrow_inc.svg
+  static const String imagesArrowInc = "assets/images/arrow_inc.svg";
+
   /// Assets for imagesCommunity
   /// assets/images/community.svg
   static const String imagesCommunity = "assets/images/community.svg";

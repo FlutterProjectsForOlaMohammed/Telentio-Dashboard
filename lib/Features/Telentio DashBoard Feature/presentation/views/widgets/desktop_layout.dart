@@ -7,23 +7,21 @@ class DesktopLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: const Color(0xffE5EAFF),
+    return const Scaffold(
+      backgroundColor: Color(0xffE5EAFF),
       body: Row(
         children: [
-          const Expanded(
+          Expanded(
             flex: 2,
             child: CustomDrawer(),
           ),
-          const Expanded(
+          Expanded(
             flex: 9,
             child: DashboardSection(),
           ),
           Expanded(
             flex: 3,
-            child: Container(
-              child: Text("Ola"),
-            ),
+            child: Text("Ola"),
           ),
         ],
       ),
