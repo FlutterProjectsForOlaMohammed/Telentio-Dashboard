@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:telentio_dashboard/Features/Telentio%20DashBoard%20Feature/presentation/views/widgets/application_received_time_section.dart';
 import 'package:telentio_dashboard/Features/Telentio%20DashBoard%20Feature/presentation/views/widgets/applications_and_acquisitions_section.dart';
 import 'package:telentio_dashboard/Features/Telentio%20DashBoard%20Feature/presentation/views/widgets/dashboard_section_header.dart';
 import 'package:telentio_dashboard/Features/Telentio%20DashBoard%20Feature/presentation/views/widgets/statisitics_card_section.dart';
@@ -23,7 +24,11 @@ class DashboardSection extends StatelessWidget {
             SizedBox(
               height: 32,
             ),
-            ApplicationsAndAcquisitionsSection()
+            ApplicationsAndAcquisitionsSection(),
+            SizedBox(
+              height: 32,
+            ),
+            ApplicationReceivedTimeSection(),
           ],
         ),
       ),

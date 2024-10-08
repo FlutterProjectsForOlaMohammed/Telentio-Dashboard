@@ -78,6 +78,7 @@ class StatesOfApplicationsBarChart extends StatelessWidget {
           getTitlesWidget: (value, meta) {
             return BarChartLeftSideLabel(
               value: value,
+              intervalValue: 20,
             );
           },
         ),

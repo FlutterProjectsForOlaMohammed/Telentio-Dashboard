@@ -5,11 +5,13 @@ class BarChartLeftSideLabel extends StatelessWidget {
   const BarChartLeftSideLabel({
     super.key,
     required this.value,
+    required this.intervalValue,
   });
   final double value;
+  final int intervalValue;
   @override
   Widget build(BuildContext context) {
-    if (value % 20 == 0) {
+    if (value % intervalValue == 0) {
       return FittedBox(
         fit: BoxFit.scaleDown,
         alignment: Alignment.centerLeft,
