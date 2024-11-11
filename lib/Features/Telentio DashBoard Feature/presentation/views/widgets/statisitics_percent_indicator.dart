@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:telentio_dashboard/core/utils/app_styles.dart';
 import 'package:telentio_dashboard/core/utils/color_palette.dart';
+import 'package:telentio_dashboard/core/utils/responsive_font.dart';
 
 class StatisiticsPercentIndicator extends StatelessWidget {
   const StatisiticsPercentIndicator({
@@ -18,7 +19,7 @@ class StatisiticsPercentIndicator extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(right: 32),
       child: CircularPercentIndicator(
-        radius: 32,
+        radius: ResponsiveFont.responsiveFontSize(context, baseFont: 32),
         center: FittedBox(
           child: Text(
             "+$text%",

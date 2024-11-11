@@ -10,11 +10,14 @@ class BarChartBottomSideLabel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text(
-        label,
-        style: AppStyles.styleRegular10(context).copyWith(
-            color: const Color(0xff000000).withOpacity(0.4),
-            fontWeight: FontWeight.w700),
+      child: Transform.rotate(
+        angle: -45 * (3.141592653589793 / 180),
+        child: Text(
+          label,
+          style: AppStyles.styleRegular10(context).copyWith(
+              color: const Color(0xff000000).withOpacity(0.4),
+              fontWeight: FontWeight.w700),
+        ),
       ),
     );
   }

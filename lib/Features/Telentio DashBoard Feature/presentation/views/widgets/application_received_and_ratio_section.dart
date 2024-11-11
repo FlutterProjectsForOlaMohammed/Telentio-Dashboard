@@ -7,20 +7,23 @@ class ApplicationReceivedAndRatioSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
-      children: [
-        Expanded(
-          flex: 8,
-          child: ApplicationReceivedTimeSection(),
-        ),
-        SizedBox(
-          width: 16,
-        ),
-        Expanded(
-          flex: 4,
-          child: RatioByGenderSection(),
-        )
-      ],
+    return const IntrinsicHeight(
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Expanded(
+            flex: 8,
+            child: ApplicationReceivedTimeSection(),
+          ),
+          SizedBox(
+            width: 16,
+          ),
+          Expanded(
+            flex: 4,
+            child: RatioByGenderSection(),
+          )
+        ],
+      ),
     );
   }
 }

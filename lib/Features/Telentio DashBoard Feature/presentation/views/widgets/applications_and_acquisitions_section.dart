@@ -20,7 +20,10 @@ class ApplicationsAndAcquisitionsSection extends StatelessWidget {
         ),
         Expanded(
           flex: 4,
-          child: AcquisitionsSection(),
+          child: AspectRatio(
+            aspectRatio: 273 / 363,
+            child: AcquisitionsSection(),
+          ),
         )
       ],
     );

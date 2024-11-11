@@ -8,28 +8,28 @@ class StatisiticsCard extends StatelessWidget {
   final StatisiticsCardModel statisiticsCardModel;
   @override
   Widget build(BuildContext context) {
-    return AspectRatio(
-      aspectRatio: 266 / 126,
-      child: Container(
-        decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(10),
-        ),
-        child: Padding(
-          padding: const EdgeInsets.only(left: 16, bottom: 16),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              StatisiticsCardHeader(
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(10),
+      ),
+      clipBehavior: Clip.antiAlias,
+      child: Padding(
+        padding: const EdgeInsets.only(left: 20, bottom: 16, right: 20),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Flexible(
+              child: StatisiticsCardHeader(
                 statisiticsCardModel: statisiticsCardModel,
               ),
-              Expanded(
-                child: StatisiticsCardBody(
-                  statisiticsCardModel: statisiticsCardModel,
-                ),
+            ),
+            Flexible(
+              child: StatisiticsCardBody(
+                statisiticsCardModel: statisiticsCardModel,
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

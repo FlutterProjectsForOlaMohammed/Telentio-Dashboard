@@ -47,12 +47,15 @@ class CustomizedLineChart extends StatelessWidget {
             return ColorPalette.black.withOpacity(0.1);
           },
           getTooltipItems: (touchedSpots) {
-            return List.generate(touchedSpots.length, (index) {
-              return LineTooltipItem(
-                touchedSpots[index].y.toString(),
-                AppStyles.styleSemiBold16(context),
-              );
-            });
+            return List.generate(
+              touchedSpots.length,
+              (index) {
+                return LineTooltipItem(
+                  touchedSpots[index].y.toString(),
+                  AppStyles.styleSemiBold16(context),
+                );
+              },
+            );
           },
         ),
       ),

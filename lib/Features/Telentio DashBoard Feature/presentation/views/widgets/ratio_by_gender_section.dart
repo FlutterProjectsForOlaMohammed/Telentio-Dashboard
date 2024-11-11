@@ -21,30 +21,31 @@ class RatioByGenderSection extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              'Ratio by Gender',
-              style: AppStyles.styleSemiBold16(context)
-                  .copyWith(color: Colors.black),
+            FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text(
+                'Ratio by Gender',
+                style: AppStyles.styleSemiBold16(context)
+                    .copyWith(color: Colors.black),
+              ),
             ),
             const SizedBox(
-              height: 10,
+              height: 30,
             ),
-            const Expanded(
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.end,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  GenderDataItem(
-                    color: ColorPalette.purple,
-                    text: 'Male',
-                  ),
-                  GenderPieChart(),
-                  GenderDataItem(
-                    color: ColorPalette.yellow,
-                    text: 'Female',
-                  ),
-                ],
-              ),
+            const GenderPieChart(),
+            const Row(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                GenderDataItem(
+                  color: ColorPalette.purple,
+                  text: 'Male',
+                ),
+                Spacer(),
+                GenderDataItem(
+                  color: ColorPalette.yellow,
+                  text: 'Female',
+                ),
+              ],
             ),
           ],
         ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:telentio_dashboard/Features/Telentio%20DashBoard%20Feature/presentation/views/widgets/custom_drawer.dart';
 import 'package:telentio_dashboard/Features/Telentio%20DashBoard%20Feature/presentation/views/widgets/dashboard_section.dart';
+import 'package:telentio_dashboard/Features/Telentio%20DashBoard%20Feature/presentation/views/widgets/notifications_and_profile_section.dart';
 
 class DesktopLayout extends StatelessWidget {
   const DesktopLayout({super.key});
@@ -21,7 +22,7 @@ class DesktopLayout extends StatelessWidget {
           ),
           Expanded(
             flex: 4,
-            child: Text("Ola"),
+            child: NotificationsAndProfileSection(),
           ),
         ],
       ),

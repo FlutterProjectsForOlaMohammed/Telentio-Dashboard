@@ -37,7 +37,6 @@ class _ByTimingDropDownButtonState extends State<ByTimingDropDownButton> {
     return Card(
       color: Colors.white,
       elevation: 0,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
       child: DropdownButtonHideUnderline(
         child: DropdownButton(
           icon: const Icon(
@@ -55,14 +54,16 @@ class _ByTimingDropDownButtonState extends State<ByTimingDropDownButton> {
               );
             });
           },
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 2),
+          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 2),
           borderRadius: BorderRadius.circular(14),
           value: selectedItem,
           items: dropdownMenuItemitems,
           onChanged: (value) {
-            setState(() {
-              selectedItem = value;
-            });
+            setState(
+              () {
+                selectedItem = value;
+              },
+            );
           },
         ),
       ),

@@ -22,18 +22,24 @@ class BarChartItemsListData extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      children: List.generate(items.length, (index) {
-        return Row(
-          children: [
-            BarChartItemData(
-              barChatItemDataModel: items[index],
+      children: List.generate(
+        items.length,
+        (index) {
+          return Flexible(
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                BarChartItemData(
+                  barChatItemDataModel: items[index],
+                ),
+                const SizedBox(
+                  width: 16,
+                ),
+              ],
             ),
-            const SizedBox(
-              width: 16,
-            ),
-          ],
-        );
-      }),
+          );
+        },
+      ),
     );
   }
 }

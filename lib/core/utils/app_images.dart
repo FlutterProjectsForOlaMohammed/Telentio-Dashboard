@@ -46,6 +46,10 @@ class AppImages {
   /// assets/images/notificationIcon.svg
   static const String imagesNotificationIcon = "assets/images/notificationIcon.svg";
 
+  /// Assets for imagesPersonPic
+  /// assets/images/personPic.png
+  static const String imagesPersonPic = "assets/images/personPic.png";
+
   /// Assets for imagesSchedule
   /// assets/images/schedule.svg
   static const String imagesSchedule = "assets/images/schedule.svg";

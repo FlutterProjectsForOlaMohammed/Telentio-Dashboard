@@ -12,12 +12,23 @@ class AcquisitionsSectionHeader extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(
-          "Acquisitions",
-          style: AppStyles.styleRegular14(context)
-              .copyWith(color: Colors.black, fontWeight: FontWeight.w600),
+        Flexible(
+          child: FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: Alignment.centerLeft,
+            child: Text(
+              "Acquisitions",
+              style: AppStyles.styleRegular14(context)
+                  .copyWith(color: Colors.black, fontWeight: FontWeight.w600),
+            ),
+          ),
         ),
-        const ByTimingDropDownButton(),
+        const Flexible(
+          child: FittedBox(
+            fit: BoxFit.scaleDown,
+            child: ByTimingDropDownButton(),
+          ),
+        ),
       ],
     );
   }

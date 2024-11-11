@@ -7,7 +7,6 @@ import 'package:telentio_dashboard/core/widgets/custom_button.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
-
   @override
   Widget build(BuildContext context) {
     return const Drawer(
